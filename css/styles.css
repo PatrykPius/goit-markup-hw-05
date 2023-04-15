@@ -89,10 +89,6 @@ button {
   padding: 0 371px 0 93px;
 } */
 
-/* .mail-head-style {
-    margin-right: 50px;
-} */
-
 .nav {
   text-decoration: none;
 }
@@ -536,3 +532,16 @@ display: inline-flex;
   padding-bottom: 27px;
 }
 
+.is-active {
+  position: relative;
+}
+
+.is-active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--active-color);
+  width: 100%;
+height: 4px;
+border-radius: 2px;
+margin-top: 28px;
+}
