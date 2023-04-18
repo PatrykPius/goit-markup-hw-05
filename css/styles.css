@@ -96,6 +96,8 @@ button {
 .nav:hover,
 .nav:focus {
   color: var(--active-color);
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-mail {
@@ -127,6 +129,8 @@ button {
 .header-contact-phone:is(:hover, :focus) {
   color: var(--active-color);
   fill: var(--active-color);
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -227,6 +231,8 @@ button {
   background-color: var(--active-color);
   color: var(--btns);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-main {
@@ -430,6 +436,8 @@ margin-bottom: 30px;
 fill: var(--svg-first-color);
 background-color: var(--svg-first-background-color);
 border-radius: 50px;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .h2-our-clients {
@@ -464,6 +472,8 @@ fill: var(--icons-svg);
 .clients:is(:hover, :focus) {
   fill:var(--active-color);
   border: 1px solid #2196f3;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us {
@@ -506,6 +516,8 @@ margin-top: 12px;
 .portfolio-figure:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* WHAT WE DOING */
 .img-with-title {
@@ -544,4 +556,35 @@ display: inline-flex;
 height: 4px;
 border-radius: 2px;
 margin-top: 28px;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-text-portf {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+position: absolute;
+margin: 0;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+background: rgba(33, 150, 243, 0.9);
+padding: 10px;
+transform: translateY(100%);
+transition: transform 250ms ease-in;
+padding: 49px 45px 49px 24px;
+}
+
+.portfolio-figure:hover .img-text-portf {
+transform: translateY(0);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
