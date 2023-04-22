@@ -40,7 +40,7 @@
       <section class="hero">
         <div class="container heroflex">
         <h1 class="h1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="main-btn" type="button">Zamów usługę</button>
+        <button data-modal-open class="main-btn" type="button">Zamów usługę</button>
         </div>
       </section>
 
@@ -269,6 +269,12 @@
         </div>
         </section>
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button">X</button>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
