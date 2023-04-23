@@ -578,7 +578,7 @@ top: 0;
 bottom: 0;
 background: rgba(33, 150, 243, 0.9);
 padding: 10px;
-transform: translateY(100%);
+transform: translateY(101%);
 transition: transform 250ms ease-in;
 padding: 49px 45px 49px 24px;
 }
@@ -632,4 +632,5 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #FFF;
+  padding: 6px;
 }
