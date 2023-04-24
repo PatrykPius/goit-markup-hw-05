@@ -100,7 +100,7 @@ button {
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact-mail {
+.header-contact {
   color: var(--second-color);
   text-decoration: none;
   font-weight: 500;
@@ -110,23 +110,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   align-items: center;
   gap: 10px;
+  fill: var(--second-color);
+}
+
+.mailheader {
   margin-right: 40px;
 }
 
-.header-contact-phone {
-   color: var(--second-color);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-contact-mail:is(:hover, :focus),
-.header-contact-phone:is(:hover, :focus) {
+.header-contact:is(:hover, :focus) {
   color: var(--active-color);
   fill: var(--active-color);
   transition-duration: 250ms;
@@ -430,12 +421,12 @@ margin-bottom: 30px;
   justify-content: center;
   align-items: center;
   fill: #AFB1B8;
+  border-radius: 50%;
 }
 
 .team-social-links:is(:hover, :focus) {
 fill: var(--svg-first-color);
 background-color: var(--svg-first-background-color);
-border-radius: 50px;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -633,4 +624,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   padding: 6px;
+}
+
+.active {
+  color: var(--active-color);
 }
