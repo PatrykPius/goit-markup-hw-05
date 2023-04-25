@@ -52,8 +52,9 @@ button {
   --svg-first-background-color: #2196F3;
   --svg-second-background-color: #F5F4FA;
   --join-us: white;
-  /* agency - what we doing */
   --img-title: #FFFFFF;
+  --x-modal-color: #2196f3;
+  --x-modal-background: #757575;
 }
 
 .logo-header {
@@ -143,6 +144,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--active-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn {
@@ -427,8 +430,7 @@ margin-bottom: 30px;
 .team-social-links:is(:hover, :focus) {
 fill: var(--svg-first-color);
 background-color: var(--svg-first-background-color);
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .h2-our-clients {
@@ -624,6 +626,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   padding: 6px;
+}
+
+.x-modal-close:hover {
+  fill: var(--x-modal-color);
+  border-color: var(var(--x-modal-background));
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
